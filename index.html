@@ -71,6 +71,21 @@
         img {
             border-radius: 5px;
         }
+
+        /* 手機版設置 */
+        @media (max-width: 768px) {
+            .instagram-embed {
+                padding-bottom: 100%;
+            }
+        }
+
+        /* 平板和桌面版設置 */
+        @media (min-width: 768px) {
+            .instagram-embed {
+                padding-bottom: 56.25%;
+                /* 16:9比例 */
+            }
+        }
     </style>
 
 
@@ -221,20 +236,13 @@
             </div>
 
             <!-- 影片區塊，iframe設定自適應 -->
-            <div class="col-12 col-md-4"
-                style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <div class="col-12 col-md-4 instagram-embed" style="position: relative; height: 0; overflow: hidden;">
                 <iframe src="https://www.instagram.com/p/DBSYEh_hd0u/embed" frameborder="0" scrolling="no"
                     allowtransparency="true"
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
                 </iframe>
             </div>
 
-            <!-- <div class="col-12 col-md-4"
-                style="position: relative; padding-bottom: 28.125%; height: 0; overflow: hidden;">
-                <iframe src="https://www.instagram.com/p/DBSYEh_hd0u/embed" frameborder="0" scrolling="no"
-                    allowtransparency="true"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-            </div> -->
 
 
         </div>
